@@ -1,6 +1,6 @@
 # Node JS Interview Questions
 
-### Q.1 What is node.js ?
+## Q.1 What is node.js ?
 
 **Answer:**
 Node.js is a runtime environment for javascript that allows you to run JavaScript code on the server side outside of a web browser.
@@ -9,7 +9,7 @@ Node.js is a runtime environment for javascript that allows you to run JavaScrip
 *   **Used for backend development:** - While JavaScript is traditionally used on the client side (browser), Node.js lets you build the server side using JavaScript too.
 
 
-### Q.2 Advantages of node.js
+## Q.2 Advantages of node.js
 
 **Answer:**
 *   **Fast Performance:** - Built on Chrome’s V8 engine, which compiles JavaScript to machine code.
