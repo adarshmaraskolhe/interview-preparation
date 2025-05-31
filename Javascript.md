@@ -1,2 +1,4 @@
-'''javascript
+```javascript
 console.log("Javascript")
+
+```
