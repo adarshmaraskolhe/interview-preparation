@@ -1,3 +1,2 @@
 '''javascript
 console.log("Javascript")
-'''
