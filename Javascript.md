@@ -1,1 +1,3 @@
-'''console.log("Javascript")'''
+'''javascript
+console.log("Javascript")
+'''
