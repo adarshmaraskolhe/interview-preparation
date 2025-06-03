@@ -87,3 +87,29 @@ my-app/
 └── server.js             # Entry point to start the server
 
 ```
+
+## Q.10 What is MVC?
+
+**Answer:** 
+MVC – Model View Controller
+* Model: Database schemas (e.g., Mongoose models).
+
+* View: If using a templating engine (e.g., EJS, Handlebars), it's rendered HTML.
+
+* Controller: Handles routes, gets data from Model, returns it to View or as JSON.
+
+
+## Q.11 Blocking vs Non blocking operations in node.js?
+
+**Answer:** 
+- **Blocking:**
+* Stops execution until task finishes
+* Occupies the main thread
+* Slower with I/O operations
+* Eg.- fs.readFileSync()
+
+- **Non-Blocking:**
+* Continues execution while the task completes in the background
+* Frees the main thread to handle other tasks
+* Faster and scalable under heavy I/O
+* Eg.- fs.readFile() or fs.promises.readFile()
