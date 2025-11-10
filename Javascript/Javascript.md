@@ -36,7 +36,6 @@ console.log(x4);
             let b = 20;
             console.log(b); // 20
         }
-
     ```
 
 * **const :** 
@@ -141,3 +140,107 @@ myClosure(); // Output: Hello
 ## Q.6 Spread (`...`) vs Rest (`...`)
 
 **Answer:** 
+
+
+## Q.7 `for...in` vs `for...of`
+
+**Answer:** 
+
+## Q.8 
+
+**Answer:** 
+
+
+## Q.9 call, apply and bind
+
+**Answer:** 
+
+## Q.10 Polyfill for bind()
+
+**Answer:** 
+
+## Q.11 function currying
+
+**Answer:** Currying is used in JavaScript to break down complex function calls into smaller, more manageable steps. It transforms a function with multiple arguments into a series of functions, each taking a single argument.
+
+
+## Q.12 Promise and Promise APIs
+
+**Answer:** 
+
+
+
+```js
+
+const p1 = new Promise ((res,rej)=>{
+    setTimeout(()=>{
+        res("P1 resolve")
+    },5000)
+})
+
+
+const p2 = new Promise ((res,rej)=>{
+    setTimeout(()=>{
+       res("Resolve P2")
+    },10000)
+})
+
+async function resolveFun(){
+    console.log(`${new Date().getMinutes()}:${new Date().getSeconds()}`)
+    const val1= await p2;
+    console.log(val1)
+    
+    console.log(`${new Date().getMinutes()}:${new Date().getSeconds()}`)
+
+    const val2= await p1;
+    console.log(val2)
+    
+    console.log(`${new Date().getMinutes()}:${new Date().getSeconds()}`)
+
+}
+resolveFun()
+```
+
+
+```js
+/*
+
+Given an array arr = [10, [20, 30, [40, 50]], 60, 70, [[80], [90], 100]]
+
+you have to return max,min and sum of all the elements present in the given array
+
+** output should be [ 100, 10, 550 ]
+*/
+let arr = [10, [20, 30, [40, 50]], 60, 70, [[80], [90], 100]]
+
+function jaggedArray(arr){
+    let max = -Infinity , min = Infinity ;
+    let sum = 0;
+
+    for(let ele of arr){
+        if(typeof ele == 'number'){
+            sum+=ele;
+            if(ele<min){
+                min = ele
+            }
+            if(ele>max){
+                max = ele
+            }
+        }
+        else{
+            let [newMax,newMin,newSum] = jaggedArray(ele)
+            if(newMax>max){
+                max = newMax
+            }
+            if(newMin<min){
+                min = newMin
+            }
+            sum += newSum
+        }
+    }
+    return [max,min,sum]
+}
+
+console.log(jaggedArray(arr))
+
+```
