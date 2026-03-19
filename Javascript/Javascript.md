@@ -244,3 +244,8 @@ function jaggedArray(arr){
 console.log(jaggedArray(arr))
 
 ```
+
+
+## Q. Callback vs Promise
+
+**Answer:**
